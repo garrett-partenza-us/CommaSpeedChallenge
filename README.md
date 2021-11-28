@@ -2,6 +2,13 @@
 
 This repository contains the work for my attempt at the CommaSpeedChallenge (about four years to late, I know). The goal of the challenge is to use machine learning to predict the speed of a car from a dashcam video. The challenge provides a labeled dataset of video shot at 20 fps totaling to 20400 frames and their corresponding speeds. The challenge also contains an unlabeled test video which you can submit to the company for grading. 
 
+### To Do
+1. Generate serialized pickle file of optical flow RGB images (post-flattened) for all numpy optical flow arrays
+2. Generate serialized pickle file of EFN-B0 feature extractions (post-flattened) for all optical flow RGB images
+3. Train simple feed forward on RGB
+4. Train simple feed forward on EFN-B0 features
+5. Incorperate temporal model. 
+
 
 ## Outline
 1. [Related Work]
