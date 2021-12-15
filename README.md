@@ -1,4 +1,4 @@
-# CommaSpeedChallenge - Predicting speed of car from dashcam point-of-view.
+# Predicting speed of car from dashcam footage.
 
 ![Alt Text](https://github.com/SharifElfouly/vehicle-speed-estimation/blob/master/vis/pred_label_vis.gif)
 
