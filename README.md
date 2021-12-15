@@ -5,7 +5,7 @@ The contribution of this work is an attempt of the 2017 Comma Speed Challenge. T
 
 ## Outline
 1. [Methodology](#Methodology)
-2. [Experimental\ Setup](#Experimental Setup)
+2. [Experimental-Setup](#Experimental Setup)
 3. [Results](#Results)
 
 ## Methodology
@@ -17,7 +17,7 @@ For the learnable layers, I use a neural architecture style based off of OpenPil
 
 The architecture I personally used for training consists of four stacked convolutional layers for feature extraction of the optical flow images from RAFT. Batch normalization and max-pooling are also applied after each convolutional layer. The output of the convolutional layers is then fed into three stacked bidirectional LSTMs to extract the temporal features. Finally, the last hidden states of each cell are flattened before being fed into four fully connected layers for prediction. Before each dense layer, a dropout of 0.2 was applied to aid in generalization. To meet the requirements of Machine Learning 6140 I train two different networks, one with a recurrent layer and one without, to demonstrate the utility of temporal dimensions in computer-vision for driving tasks. 
 
-## Experimental Setup
+## Experimental-Setup
 For both models, 10,000 test cases were randomly sampled from the challenge dataset with a validation set size of 0.1. Both models were trained for 100 epochs with a batch size of 32 using an Adam optimizer. Learning rate was set to 0.02 alongside an exponential decay scheduler with gamma set to 0.99 and stepped every epoch. For the model which used a recurrent layer, a sequence of length 5 was used which amounts to 0.25 seconds of video. This is a regression task, so predictions of both models were evaluated using the mean squared error between model output and actual speed in MPH. The MSE of the training set and the validation set was logged on every epoch. GPU training was utilized on the Northeastern Discovery compute cluster with a NVIDIA Telsa P100 12GB. Average time to completion of training was around three hours for both models.
 
 ## Results
