@@ -1,4 +1,4 @@
-# Predicting speed of car from dashcam footage.
+# Learning Speed: A OpenPilot-style architecture for predicting speed of car from dashcam footage.
 
 ![Alt Text](https://github.com/SharifElfouly/vehicle-speed-estimation/blob/master/vis/pred_label_vis.gif)
 
