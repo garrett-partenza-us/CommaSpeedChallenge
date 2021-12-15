@@ -5,7 +5,7 @@ The contribution of this work is an attempt of the 2017 Comma Speed Challenge. T
 
 ## Outline
 1. [Methodology](#Methodology)
-2. [Experimental Setup](#Experimental Setup)
+2. [Experimental\ Setup](#Experimental Setup)
 3. [Results](#Results)
 
 ## Methodology
