@@ -8,7 +8,7 @@ The contribution of this work is an attempt of the 2017 Comma Speed Challenge. T
 2. [Experimental Setup]
 3. [Results]
 
-## [Methodology]
+## Methodology
 Being that we are trying to detect the intensity of motion within an image, it makes sense to utilize optical flow as a feature in our training pipeline. In short, optical flow is the pattern of apparent motion of objects, surfaces, and edges in a visual scene caused by the relative motion between an observer and a scene. A better definition in the context of this project is that optical flow is the distribution of apparent velocities of movement of brightness pattern in an image. Algorithmically this can be solved using differentiation between two images and approximations of corresponding pixels, however, this method results in two unknowns and thus is unsolvable without additional constraints. While there are numerous mathematical approaches to fix this issue, recent approaches have found success in using deep learning with the most popular project known as Recurrent All-Pairs Field Transforms (RAFT).
 
 Since RAFT is open-sourced, I downloaded the pretrained model and converted all video frames into their corresponding optical-flow representation before being inputted into any downstream neural architecture. In this manner, we maintain the edges and shapes within images and use the RGB channels to pass optical flow information.
