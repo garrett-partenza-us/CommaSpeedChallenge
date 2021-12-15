@@ -1,6 +1,6 @@
 # CommaSpeedChallenge - Predicting speed of car from dashcam point-of-view.
 
-![Alt Text](https://github.com/garrett-partenza-us/CommaSpeedChallenge/blob/main/source/out.gif)
+![Alt Text](https://raw.githubusercontent.com/garrett-partenza-us/CommaSpeedChallenge/main/source/out.gif)
 
 The contribution of this work is an attempt of the 2017 Comma Speed Challenge. The goal of the challenge is to predict the speed of a car from the view of its own dash camera. In this work, I demonstrate how to integrate recurrent all-pairs field transforms for optical flow alongside an OpenPilot-style network architecture to train. Experimental results indicate this approach performs fairly well. More information regarding the challenge can be found in the CommaAI GitHub repository https://github.com/commaai/speedchallenge.
 
