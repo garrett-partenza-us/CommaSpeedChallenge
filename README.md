@@ -26,3 +26,5 @@ For both models, 10,000 test cases were randomly sampled from the challenge data
 
 ## Results
 The recurrent model achieves a minimum validation MSE of 4.623 (within 2 MPH) while the non-recurrent model achieves 6.844 (within 2.6 MPH). The Comma Speed Challenge repository states that a mean squared error less than 10 is good, while less than 5 is better and less than 3 is heart (<3, get it?). By this grading scale I conclude that my model achieved above average performance on the validation set. 
+
+![Alt Text](https://github.com/garrett-partenza-us/CommaSpeedChallenge/blob/main/charts/csc-table.png)
